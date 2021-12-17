@@ -295,8 +295,53 @@ section.blog-posts {
   margin-bottom: 30px;
 }
 
+/* @media screen and (max-width: 600px) {
+  div.ad {
+    flex-direction: column-reverse;
+  }
+} */
+
 div.ad a {
   text-decoration: none;
+}
+
+.ad > .image {
+  width: 200px;
+  display: flex;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  div.ad .desc {
+    display: none;
+  }
+
+  .ad > .image {
+    width: 100px;
+  }
+
+  .ad .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 56px;
+    /* width: calc(100%);
+    display: block;
+    white-space: nowrap; */
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.ad > .image > img {
+  display: flex;
+  flex: 1;
+  object-fit: cover;
+  flex-direction: column;
+}
+
+.ad > .details {
+  flex: 1;
 }
 
 .ac {
