@@ -220,7 +220,7 @@ div.nav-button .nav-button-link {
 .ad {
   align-content: center;
   justify-content: center;
-  gap: 50px;
+  gap: 15px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 30px;
 }
@@ -270,8 +270,13 @@ div.ad a {
 }
 
 div.spans {
+  /* max-height: 20px; */
   align-content: center;
   justify-content: space-between;
+}
+
+.bb {
+  align-items: center;
 }
 
 .bb > .be {
@@ -296,10 +301,6 @@ div.spans {
 
 .bf {
   top: -4px;
-}
-
-.metadata {
-  padding-top: 5px;
 }
 
 .button {
@@ -452,6 +453,18 @@ div.links a {
 }
 
 @media screen and (max-width: 600px) {
+  .metadata {
+    /* padding-top: 5px; */
+  }
+
+  .be {
+    top: -4px;
+  }
+
+  div.spans {
+    max-height: 20px;
+  }
+
   div.ad .desc {
     display: none;
   }
@@ -470,6 +483,11 @@ div.links a {
     -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+  }
+
+  .hide,
+  .az {
+    display: none;
   }
 }
 
