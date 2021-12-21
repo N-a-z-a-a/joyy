@@ -453,10 +453,6 @@ div.links a {
 }
 
 @media screen and (max-width: 600px) {
-  .metadata {
-    /* padding-top: 5px; */
-  }
-
   .be {
     top: -4px;
   }
